@@ -1,4 +1,6 @@
-console.log("JS is connected!");// Text Adventure Game
+console.log("JS is connected!");
+
+// Text Adventure Game
 const enter = "Please enter 1 or 2 for your answer";
 const gameOver = "Sorry GAME OVER!";
 const start = `Welcome to the Ghostbusters Text Adventure Game. Click 'OK' to start the game.`;
@@ -33,3 +35,40 @@ OR
 ${enter}`;
 const gameOver5 = `You looked at the trap and the light BLINDED YOU! ${gameOver}`;
 const win = `The ghost trap sucked Slimer in and closed. CONGRATULATIONS! YOU CAUGHT SLIMER!!!`;
+
+alert(start);
+
+let userInput = prompt(q1);
+
+if (userInput == 1) {
+  userInput = prompt(q2);
+
+  if (userInput = 1){
+    userInput = prompt(q3);
+
+    if(userInput == 2) {
+        userInput = prompt(q4);
+
+        if(userInput == 1){
+            UserInput = prompt(q5);
+
+           if(userInput == 2) {
+               alert(win);
+           } else {
+               alert(gameOver5);
+           }
+
+        }else {
+            alert(gameOver4);
+        }
+    } else {
+        alert(gameOver3);
+    }
+  }else {
+      alert(gameOver2)
+  }
+}else {
+    alert(gameOver1);
+}
+
+
